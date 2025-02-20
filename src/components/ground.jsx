@@ -3,6 +3,8 @@ import { useGLTF } from '@react-three/drei';
 
 export function Ground(props) {
   const group = useRef();
+  const { nodes, materials, scene } = useGLTF('/stage1.glb');
+
 
 
   useEffect(() => {
